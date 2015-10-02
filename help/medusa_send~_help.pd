@@ -1,0 +1,13 @@
+#N canvas 705 207 450 300 10;
+#X obj 297 63 osc~ 730;
+#X msg 295 -75 \; pd dsp 1;
+#X msg 295 -37 \; pd dsp 0;
+#X floatatom 127 38 5 0 0 0 - - -;
+#X floatatom 297 42 5 0 0 0 - - -;
+#X msg 97 -19 connect TCP 50005;
+#X obj 97 96 medusa_send~ 1;
+#X obj 127 61 osc~ 440;
+#X connect 3 0 7 0;
+#X connect 4 0 0 0;
+#X connect 5 0 6 0;
+#X connect 7 0 6 0;

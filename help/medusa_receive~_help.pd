@@ -1,0 +1,9 @@
+#N canvas 669 168 450 300 10;
+#X msg 295 -75 \; pd dsp 1;
+#X msg 295 -37 \; pd dsp 0;
+#X obj 182 160 dac~;
+#X msg 51 36 connect PD_send@flavio_1;
+#X obj 98 96 medusa_receive~ 1;
+#X obj 86 -40 medusa_chat;
+#X connect 3 0 4 0;
+#X connect 4 0 2 0;
